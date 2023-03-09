@@ -60,7 +60,6 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 10px;
-  text-decoration: none;
 }
 
 .btn-nav {
@@ -72,7 +71,6 @@ nav ul li a {
 /******************** BUSCADOR ********************/
 .buscador{
   background-color: #ffffff;
-  justify-content: center;
 }
 form .btn{
   border-color: #a8a8a8;
@@ -88,6 +86,34 @@ form button .bx{
 form button .bx:hover{
   color: #3b3b3b;
   transition-duration: 0.5s;
+}
+.btn-buscar{
+  padding-left: 13.5%;
+}
+.barra{
+  margin-top: 1%;
+}
+/******************** CARROUSEL ********************/
+.img-carrousel{
+  height: 450px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(200%);
+}
+
+/******************** CONTENT ********************/
+.nuestros-servicios{
+  text-align: center;
+  color: #22A5E6;
+  -webkit-text-stroke: 1px #5A63B7;
+  font-style: normal;
+}
+.text-title{
+  text-align: center;
+}
+.text-service{
+  text-align: center;
 }
 
 /******************** FOOTER ********************/
@@ -152,4 +178,44 @@ form button .bx:hover{
 .img-ffaa-logo{
   margin-right: 10px;
   width: 100px;
+}
+/****** Segunda parte del FOOTER ******/
+
+/****** FORMULARIO ******/
+div h1{
+  text-align: center;
+  color: #22A5E6;
+  font-weight: bold;
+  font-style: italic;
+  font-size: xx-large;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-text-stroke: 0.5px black;
+}
+div h2{
+  text-align: center;
+  color: #A47171;
+  font-weight: bold;
+  font-style: italic;
+  -webkit-text-stroke: 0.2px black;
+}
+
+/****** COMUNICAMOS ******/
+.ct-videos{
+  width: 85%;
+}
+.card{
+  margin-top: 3%;
+  background-color: #C1BFBF;
+  border-radius: 17.5px;
+  text-align: center;
+}
+.card h2{
+  font-size: 22px;
+  margin: 30px 40px;
+}
+.card p{
+  font-size: 18px;
+  text-align: justify;
+  margin: 0px 30px 30px 30px;
 }
