@@ -69,38 +69,43 @@
         <H1 tabindex="10">FORMULARIO DE SEGURIDAD DEL PACIENTE 02</H1>
     </div>
     <!-- FORMULARIO -->
-    <h1 tabindex="11">Agendar Cita Médica</h1>
-    <form action="procesar_formulario.php" method="post">
-        <label for="nombre" tabindex="12">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required tabindex="13"><br><br>
+    <div class="container">
+        <hr>
+        <h1 tabindex="11" class="agendar-title">Agendar Cita Médica</h1>
+        <form action="procesar_formulario.php" method="post">
+            <div class="form-container">
+                <label for="nombre" tabindex="12">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required tabindex="13">
+                <label for="correo" tabindex="14" style="margin-left: 30px;">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required tabindex="15"><br><br>
 
-        <label for="correo" tabindex="14">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required tabindex="15"><br><br>
+                <label for="telefono" tabindex="16" style="text-align: left;">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required tabindex="17"><br><br>
 
-        <label for="telefono" tabindex="16">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required tabindex="17"><br><br>
+                <label for="fecha" tabindex="18">Fecha de la cita:</label>
+                <input type="date" id="fecha" name="fecha" required tabindex="19">
+                <label for="hora" tabindex="20" style="margin-left: 30px;">Hora de la cita:</label>
+                <input type="time" id="hora" name="hora" required tabindex="21"><br><br>
 
-        <label for="fecha" tabindex="18">Fecha de la cita:</label>
-        <input type="date" id="fecha" name="fecha" required tabindex="19"><br><br>
+                <label for="especialidad" tabindex="22">Especialidad médica:</label>
+                <select id="especialidad" name="especialidad" required tabindex="23">
+                    <option value="">Seleccionar especialidad</option>
+                    <option value="cardiología">Cardiología</option>
+                    <option value="dermatología">Dermatología</option>
+                    <option value="ginecología">Ginecología</option>
+                    <option value="oftalmología">Oftalmología</option>
+                    <option value="pediatría">Pediatría</option>
+                </select><br><br>
 
-        <label for="hora" tabindex="20">Hora de la cita:</label>
-        <input type="time" id="hora" name="hora" required tabindex="21"><br><br>
-
-        <label for="especialidad" tabindex="22">Especialidad médica:</label>
-        <select id="especialidad" name="especialidad" required tabindex="23">
-            <option value="">Seleccionar especialidad</option>
-            <option value="cardiología">Cardiología</option>
-            <option value="dermatología">Dermatología</option>
-            <option value="ginecología">Ginecología</option>
-            <option value="oftalmología">Oftalmología</option>
-            <option value="pediatría">Pediatría</option>
-        </select><br><br>
-
-        <label for="comentario" tabindex="24">Comentario:</label>
-        <textarea id="comentario" name="comentario" tabindex="25"></textarea><br><br>
-
-        <input type="submit" value="Agendar cita" tabindex="26">
-    </form>
+                <label for="comentario" tabindex="24">Comentario:</label>
+                <textarea id="comentario" name="comentario" tabindex="25"></textarea><br><br>
+                <div class="submit-form">
+                    <input type="submit" value="Agendar cita" tabindex="26">
+                </div>
+            </div>
+        </form>
+        <hr>
+    </div>
 </body>
 <footer>
     <div class="container-fluid footer-1">
@@ -136,7 +141,7 @@
                 <p class="title-card-footer" tabindex="37">CONTACTO</p>
                 <div class="container-fluid mt-3">
                     <div class="row">
-                        <div class="col-lg-2"><i class='bx bx-map bx-sm'tabindex="38"></i></div>
+                        <div class="col-lg-2"><i class='bx bx-map bx-sm' tabindex="38"></i></div>
                         <div class="col-lg-10 text-contact">
                             <p tabindex="39">Av. Queseras del Medio 521 y Av. Gran Colombia</p>
                         </div>
@@ -178,12 +183,16 @@
     <div class="container-fluid footer-2">
         <p class="copyright" tabindex="47">Copyright © 2023 Hospital Militar. Derechos Reservados.</p>
         <div class="img-container-comaco">
-            <img src="../13_hospitalMilitar/img/mindefnac_logo.png" alt="Logo del Ministerio de Defensa Nacional del Ecuador"
-                class="img-min-logo" tabindex="48">
-            <img src="../13_hospitalMilitar/img/Comaco 1.png" alt="Logo de las Fuerzas Armadas del Ecuador" class="img-ffaa-logo" tabindex="49">
-            <img src="../13_hospitalMilitar/img/Comaco 2.png" alt="Logo de la Fuerza Terrestre Ecuatoriana" class="img-ffaa-logo" tabindex="50">
-            <img src="../13_hospitalMilitar/img/Comaco 3.png" alt="Logo de la Armada del Ecuador" class="img-ffaa-logo" tabindex="51">
-            <img src="../13_hospitalMilitar/img/Comaco 4.png" alt="Logo de la Fuerza Aérea Ecuatoriana" class="img-ffaa-logo" tabindex="52">
+            <img src="../13_hospitalMilitar/img/mindefnac_logo.png"
+                alt="Logo del Ministerio de Defensa Nacional del Ecuador" class="img-min-logo" tabindex="48">
+            <img src="../13_hospitalMilitar/img/Comaco 1.png" alt="Logo de las Fuerzas Armadas del Ecuador"
+                class="img-ffaa-logo" tabindex="49">
+            <img src="../13_hospitalMilitar/img/Comaco 2.png" alt="Logo de la Fuerza Terrestre Ecuatoriana"
+                class="img-ffaa-logo" tabindex="50">
+            <img src="../13_hospitalMilitar/img/Comaco 3.png" alt="Logo de la Armada del Ecuador" class="img-ffaa-logo"
+                tabindex="51">
+            <img src="../13_hospitalMilitar/img/Comaco 4.png" alt="Logo de la Fuerza Aérea Ecuatoriana"
+                class="img-ffaa-logo" tabindex="52">
         </div>
     </div>
 </footer>
