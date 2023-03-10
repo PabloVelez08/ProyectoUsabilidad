@@ -22,7 +22,8 @@
 <body style="background-color: #E9E9E9;">
     <br>
     <!-- Imagen en la parte superior -->
-    <img src="../13_hospitalMilitar/img/banner2.png" alt="Logo del Sitio Web del Hospital Militar" class="img-fluid banner" style="height: 230px;">
+    <img src="../13_hospitalMilitar/img/banner2.png" alt="Logo del Sitio Web del Hospital Militar"
+        class="img-fluid banner" style="height: 230px;">
     <br>
 
     <!-- Barra de navegación -->
@@ -62,6 +63,39 @@
     <div style="background-color: #C1BFBF; margin-top: -24px;">
         <H1>FORMULARIO DE SEGURIDAD DEL PACIENTE 02</H1>
     </div>
+    <!-- FORMULARIO -->
+    <h1>Agendar Cita Médica</h1>
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="hora">Hora de la cita:</label>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <label for="especialidad">Especialidad médica:</label>
+        <select id="especialidad" name="especialidad" required>
+            <option value="">Seleccionar especialidad</option>
+            <option value="cardiología">Cardiología</option>
+            <option value="dermatología">Dermatología</option>
+            <option value="ginecología">Ginecología</option>
+            <option value="oftalmología">Oftalmología</option>
+            <option value="pediatría">Pediatría</option>
+        </select><br><br>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario"></textarea><br><br>
+
+        <input type="submit" value="Agendar cita">
+    </form>
 </body>
 <footer>
     <div class="container-fluid footer-1">
